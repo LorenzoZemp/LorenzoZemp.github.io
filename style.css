@@ -1,0 +1,25 @@
+body {
+  font-family: "Anonymous Pro", monospace;
+}
+
+div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.blink {
+  animation: blinking 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
