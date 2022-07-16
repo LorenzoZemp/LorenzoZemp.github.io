@@ -10,17 +10,11 @@ h1 {
 }
 
 .blink {
-  animation: blinking 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+  animation: blinking 1s steps(1) infinite;
 }
 
 @keyframes blinking {
-  0% {
-    opacity: 0;
-  }
   50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    color: transparent;
   }
 }
