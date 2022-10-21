@@ -13,14 +13,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#welcome-section h1 {
-  margin: 0;
-  font-size: 3rem;
-}
-#welcome-section h2 {
-  margin: 0;
-  font-weight: normal;
-}
 
-/*# sourceMappingURL=style.css.map */
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: normal;
+  }
+}
