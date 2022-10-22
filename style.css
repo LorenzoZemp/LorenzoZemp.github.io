@@ -21,6 +21,42 @@ body {
 #welcome-section h2 {
   margin: 0;
   font-weight: normal;
+  position: relative;
+  width: max-content;
+}
+#welcome-section h2::before,
+#welcome-section h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#welcome-section h2::before {
+  background: white;
+  animation: typewriter 2s steps(24) 1s forwards;
+}
+#welcome-section h2::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 2s steps(24) 1s forwards, blink 750ms steps(24) infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
