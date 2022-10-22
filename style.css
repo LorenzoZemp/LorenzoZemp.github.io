@@ -9,24 +9,24 @@ p {
   font-family: "Anonymous Pro", monospace;
 }
 
-#welcome-section {
+.hero {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#welcome-section h1 {
+.hero h1 {
   margin: 0;
   font-size: 3rem;
 }
-#welcome-section h2 {
+.hero h2 {
   margin: 0;
   font-weight: normal;
   position: relative;
   width: max-content;
 }
-#welcome-section h2::before,
-#welcome-section h2::after {
+.hero h2::before,
+.hero h2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -34,11 +34,11 @@ p {
   bottom: 0;
   left: 0;
 }
-#welcome-section h2::before {
+.hero h2::before {
   background: white;
   animation: typewriter 2s steps(24) 1s forwards;
 }
-#welcome-section h2::after {
+.hero h2::after {
   width: 0.125em;
   background: black;
   animation: typewriter 2s steps(24) 1s forwards, blink 750ms steps(24) infinite;
@@ -84,10 +84,29 @@ p {
   background: pink;
   width: 250px;
   height: 250px;
-  border-radius: 8px;
 }
 .projects .project-name {
   margin-top: 10px;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto;
+}
+.about-me #about-image {
+  width: 500px;
+  height: 75%;
+  background: pink;
+  justify-self: center;
+  align-self: center;
+}
+.about-me #about {
+  width: 500px;
+  align-self: center;
+}
+.about-me #about #description {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

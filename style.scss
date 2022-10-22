@@ -13,7 +13,7 @@ p {
   font-family: "Anonymous Pro", monospace;
 }
 
-#welcome-section {
+.hero {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -100,10 +100,33 @@ p {
     background: pink;
     width: 250px;
     height: 250px;
-    border-radius: 8px;
   }
 
   .project-name {
     margin-top: 10px;
+  }
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto;
+
+  #about-image {
+    width: 500px;
+    height: 75%;
+    background: pink;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #about {
+    width: 500px;
+
+    align-self: center;
+
+    #description {
+      text-align: justify;
+    }
   }
 }
