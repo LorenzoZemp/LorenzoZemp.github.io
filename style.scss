@@ -8,7 +8,8 @@ $delayBeforeTypingAnim: 1s;
   box-sizing: border-box;
 }
 
-body {
+body,
+p {
   font-family: "Anonymous Pro", monospace;
 }
 
@@ -72,4 +73,37 @@ body {
   height: 100vh;
 
   border: 5px solid red;
+}
+
+p {
+  margin: 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+    height: 320px;
+    background: rgba(0, 0, 0, 0.523);
+    justify-self: center;
+    align-self: center;
+  }
+
+  .project-image {
+    background: pink;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+  }
+
+  .project-name {
+    margin-top: 10px;
+  }
 }
