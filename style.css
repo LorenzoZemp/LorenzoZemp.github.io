@@ -109,4 +109,27 @@ p {
   text-align: justify;
 }
 
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto;
+}
+.contact #left {
+  justify-self: center;
+  align-self: center;
+}
+.contact #form {
+  justify-self: center;
+  align-self: center;
+}
+.contact #form input,
+.contact #form textarea {
+  display: block;
+  width: 500px;
+  margin: 20px 0 20px 0;
+}
+.contact #form #form-message {
+  height: 300px;
+}
+
 /*# sourceMappingURL=style.css.map */

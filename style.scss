@@ -71,7 +71,6 @@ p {
 .page {
   width: 100vw;
   height: 100vh;
-
   border: 5px solid red;
 }
 
@@ -127,6 +126,33 @@ p {
 
     #description {
       text-align: justify;
+    }
+  }
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto;
+
+  #left {
+    justify-self: center;
+    align-self: center;
+  }
+
+  #form {
+    justify-self: center;
+    align-self: center;
+
+    input,
+    textarea {
+      display: block;
+      width: 500px;
+      margin: 20px 0 20px 0;
+    }
+
+    #form-message {
+      height: 300px;
     }
   }
 }

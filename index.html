@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="style.css" />
     <!-- JS -->
     <script src="./app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ebb5e2596c.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Title -->
     <title>Lorenzo Zemp</title>
   </head>
@@ -79,7 +83,38 @@
           </p>
         </div>
       </div>
-      <div class="page"></div>
+      <div class="page contact">
+        <div id="left">
+          <h2>Contact me.</h2>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div id="form">
+          <input
+            type="text"
+            name="name"
+            id="form-name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="form-email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="form-message"
+            cols="30"
+            rows="10"
+            placeholder="..."
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
     </main>
   </body>
 </html>
