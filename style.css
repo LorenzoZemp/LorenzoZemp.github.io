@@ -26,6 +26,11 @@ p {
   margin: 0;
   font-size: 3rem;
 }
+@media (max-width: 350px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
 .hero h2 {
   margin: 0;
   font-weight: normal;
@@ -59,10 +64,6 @@ p {
   to {
     background: transparent;
   }
-}
-
-p {
-  margin: 0;
 }
 
 .projects {
@@ -100,8 +101,8 @@ p {
   }
   .about-me #about-image-container {
     position: relative;
-    width: min(500px, 70%);
-    margin: 0 20px 0 20px;
+    width: min(500px, 90%);
+    margin: 0 10px 0 10px;
     aspect-ratio: 1;
     justify-self: center;
     align-self: center;
@@ -131,8 +132,8 @@ p {
   }
 }
 .about-me #about {
-  width: min(500px, 70%);
-  margin: 0 20px 0 20px;
+  width: min(500px, 90%);
+  margin: 0 10px 0 10px;
   align-self: center;
   justify-self: center;
 }
