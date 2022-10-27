@@ -30,7 +30,7 @@
           <h2 id="job-title">Front End Developer</h2>
         </div>
       </div>
-      <div class="page projects">
+      <div class="page projects hidden">
         <div class="project-tile">
           <div class="project-image"></div>
           <p class="project-name"></p>
@@ -63,9 +63,15 @@
         </div>
       </div>
       <div class="page about-me">
-        <div id="about-image"></div>
+        <div id="about-image-container">
+          <img
+            src="./assets/imgs/portrait.jpeg"
+            alt="me sitting in front of a statue"
+            id="about-image"
+          />
+        </div>
         <div id="about">
-          <h2 id="title">This is me.</h2>
+          <h2 id="title">Who am I.</h2>
           <p id="description">
             Enthusiastic and am always seeking out new experiences. <br />
             I have a bachelor's in software engineering with a background in
@@ -84,35 +90,17 @@
         </div>
       </div>
       <div class="page contact">
-        <div id="left">
-          <h2>Contact me.</h2>
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-brands fa-twitter"></i>
-        </div>
-        <div id="form">
-          <input
-            type="text"
-            name="name"
-            id="form-name"
-            placeholder="Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="form-email"
-            placeholder="Email"
-            required
-          />
-          <textarea
-            name="message"
-            id="form-message"
-            cols="30"
-            rows="10"
-            placeholder="..."
-            required
-          ></textarea>
-          <button type="submit">Submit</button>
+        <h2>Contact me.</h2>
+        <div class="buttons">
+          <a href="https://github.com/lorenzozemp" target="_blank"
+            ><i class="fa-brands fa-github btn"></i
+          ></a>
+          <a href="https://twitter.com/lorenzozemp" target="_blank"
+            ><i class="fa-brands fa-twitter btn"></i
+          ></a>
+          <a href="mailto:zo.zemp@gmail.com"
+            ><i class="fa-solid fa-envelope btn"></i
+          ></a>
         </div>
       </div>
     </main>

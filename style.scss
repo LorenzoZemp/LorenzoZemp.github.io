@@ -71,7 +71,6 @@ p {
 .page {
   width: 100vw;
   height: 100vh;
-  border: 5px solid red;
 }
 
 p {
@@ -111,18 +110,29 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-row: auto;
 
-  #about-image {
+  #about-image-container {
+    position: relative;
     width: 500px;
     height: 75%;
-    background: pink;
     justify-self: center;
     align-self: center;
+
+    #about-image {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   #about {
     width: 500px;
 
     align-self: center;
+    justify-self: center;
+
+    #title {
+      font-size: 2.5rem;
+    }
 
     #description {
       text-align: justify;
@@ -131,28 +141,26 @@ p {
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  #left {
-    justify-self: center;
-    align-self: center;
+  h2 {
+    font-size: 2.5rem;
   }
 
-  #form {
-    justify-self: center;
-    align-self: center;
+  .buttons {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
 
-    input,
-    textarea {
-      display: block;
-      width: 500px;
-      margin: 20px 0 20px 0;
-    }
-
-    #form-message {
-      height: 300px;
+    a {
+      color: black;
     }
   }
+}
+
+.hidden {
+  display: none;
 }
