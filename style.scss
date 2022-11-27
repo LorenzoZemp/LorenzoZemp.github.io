@@ -79,27 +79,31 @@ p {
   }
 }
 
+.project-page-title {
+  text-align: center;
+  // margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
 // Projects Section
 .projects {
-  @media (max-width: 700px) {
-    height: 180vh;
-  }
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  .project-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 25px;
-  }
+  row-gap: 2rem;
+  overflow: scroll;
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+  padding: 50px 0 50px 0;
 
   .project-tile {
+    @media (max-width: 800px) {
+      width: 200px;
+      height: 220px;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,6 +124,10 @@ p {
   }
 
   .project-image {
+    @media (max-width: 800px) {
+      width: 150px;
+      height: 150px;
+    }
     border: 1px solid rgba(0, 0, 0, 0.2);
     width: 250px;
     height: 250px;
@@ -127,6 +135,9 @@ p {
   }
 
   .project-name {
+    @media (max-width: 800px) {
+      font-size: 1rem;
+    }
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 1.15rem;
@@ -135,6 +146,9 @@ p {
   .project-name,
   .project-tech {
     color: black;
+    @media (max-width: 800px) {
+      font-size: 0.8rem;
+    }
   }
 
   a {
