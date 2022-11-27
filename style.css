@@ -17,7 +17,6 @@ p {
 }
 
 .hero {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,11 +68,10 @@ p {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  row-gap: 20px;
 }
 @media (max-width: 700px) {
   .projects {
-    height: 150vh;
+    height: 180vh;
   }
 }
 .projects h2 {
@@ -83,7 +81,7 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 0px;
+  margin-top: 25px;
 }
 .projects .project-tile {
   display: flex;
