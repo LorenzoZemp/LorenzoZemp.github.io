@@ -27,15 +27,19 @@ p {
   justify-content: center;
   align-items: center;
 
+  // @media (max-width: 450px) {
+  //   h1 {
+  //     font-size: 2rem;
+  //   }
+  // }
+
   h1 {
-    @media (max-width: 350px) {
-      font-size: 2.5rem;
-    }
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   h2 {
+    font-size: 2rem;
     margin: 0;
     font-weight: normal;
     position: relative;
@@ -104,6 +108,10 @@ h2 {
       height: 220px;
     }
 
+    @media (hover: none) {
+      background: #f7f7f4;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,10 +125,12 @@ h2 {
     transition: box-shadow 0.4s;
   }
 
-  .project-tile:hover {
-    box-shadow: -1px 14px 30px -9px rgba(0, 0, 0, 0.57);
-    transition: box-shadow 0.4s;
-    cursor: pointer;
+  @media (hover: hover) {
+    .project-tile:hover {
+      box-shadow: -1px 14px 30px -9px rgba(0, 0, 0, 0.57);
+      transition: box-shadow 0.4s;
+      cursor: pointer;
+    }
   }
 
   .project-image {
@@ -231,6 +241,7 @@ h2 {
 
   .buttons {
     display: flex;
+    margin-top: 0.5rem;
     gap: 2rem;
     font-size: 1.5rem;
 
