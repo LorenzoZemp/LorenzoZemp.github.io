@@ -153,6 +153,7 @@ h2 {
   .about-me {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
+    height: 150vh;
   }
   .about-me #about-image-container {
     position: relative;
